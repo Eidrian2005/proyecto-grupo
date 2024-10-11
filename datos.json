@@ -1,0 +1,28 @@
+{
+  "inventario": [
+    {
+      "id": 1,
+      "categoria": "Libros",
+      "nombre": "El diario de Ana Frank",
+      "cantidad": "20",
+      "tipo": "Drama",
+      "precio": 30000
+    },
+    {
+      "id": 2,
+      "categoria": "Zapatos"
+    },
+    {
+      "id": 3,
+      "categoria": "Zapatos"
+    },
+    {
+      "id": 4,
+      "categoria": "pepito",
+      "nombre": "nose",
+      "cantidad": "200",
+      "tipo": "Grano",
+      "precio": 2000
+    }
+  ]
+}

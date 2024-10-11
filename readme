@@ -1,0 +1,57 @@
+Proyecto de laboratorio de clase
+
+
+Elaborado por
+
+Eidrian
+Jose 
+Freddy Torres
+
+
+Fecha de entrega
+
+11/10/2024
+
+Resumen
+
+Desarrollar una API CRUD básica utilizando Node.js, Express y archivos JSON como base de datos para la gestión de un recurso. 
+El objetivo es que cada equipo colabore de manera efectiva durante 8 horas, asegurando que el proyecto esté completo para su posterior presentación y exposición frente a los compañeros de clase.
+
+
+Get
+
+Para el get utilizamos una función asincrónica llamada “obtenerInventario”, que obtiene los datos de una variable llamada “data” por medio de fs.readFile lo cual nos permite leer  el contenido del archivo “datos.json”. 
+
+
+Get ID
+	
+	Para el get mediante ID utilizamos la misma lógica del get, no obstante se agregó una variable “const invent”, la cual nos permite llamar al id específico que necesitamos obtener. Por medio de un “if” validamos que el id exista, si no existe nos devolverá un “error 404”.
+
+
+Post
+
+	Para el post se obtienen los datos de la nueva entrada de la solicitud(req.body). Se lee el contenido de “datos.json” y se parsea a un objeto. Luego se crea el nuevo objeto ( nuevoInventario ) y los datos extraídos, posteriormente, se agrega el nuevo item al arreglo inventario y se actualiza el archivo en “data.json”.
+
+
+Delete
+
+	Para el delete se busca el indice del item en el arreglo “inventario” que coincide con el ID, se valida la existencia,  se procede a eliminarlo y actualizar el archivo de “datos.jason”
+
+
+
+Logros
+
+Creación del repositorio y el proyecto en Github, y sus respectivas ramas sin problemas.
+Creación de las carpetas y archivos en orden.
+Creamos un archivo de llamado inventarioController.js y agregamos el crud y obtuvimos como resultado el funcionamiento correcto de todos los metodos implementados.
+Creamos el servidor y probamos y funcionó correctamente.
+El get mediante ID funciona de manera correcta..
+
+
+
+Errores
+
+Con el get tuvimos errores de sintaxis y orden en el código.
+Con el getById tuvimos complicaciones con una validación que si el ID existe devuelve el objeto.
+Con el post tuvimos problemas de orden.
+
